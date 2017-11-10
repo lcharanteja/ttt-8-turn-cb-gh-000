@@ -19,5 +19,9 @@ def position_taken?(board,index)
     true
   elsif (board[index] == "X" || board[index] == "O")
     false
-  end    
+  end
+end
+
+def move(board,index,mark="X")
+  board[index] = mark
 end
